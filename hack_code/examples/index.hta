@@ -167,81 +167,102 @@ version="1.0" />
     -->
       <div class="logo">
         <a href="index.hta" class="simple-text logo-normal" align="Center">
+		 <!-- <img src="original.gif" alt="infinitloop"  width="500" height="100" align="Center"> -->
+		  <img src="giphy.gif" alt="infinitloop"  width="200" height="100" align="Center">
+		 <!-- <img src="g1.jpg" alt="infinitloop"  width="500" height="100" align="Center"> -->
+		  <!-- <img src="g2.png" alt="infinitloop"  width="500" height="100" align="Center"> -->
           <script >
-		  
-          var today = new Date();
-          var dd = today.getDate();
-          var mm = today.getMonth()+1; //January is 0!
-          var day = today.getDay()+1;
-          var yyyy = today.getFullYear();
+		 
+          <!-- var today = new Date(); -->
+          <!-- var dd = today.getDate(); -->
+          <!-- var mm = today.getMonth()+1; //January is 0! -->
+          <!-- var day = today.getDay()+1; -->
+          <!-- var yyyy = today.getFullYear(); -->
 
-          if(dd<10) {
-            dd = '0'+dd
-          } 
+          <!-- if(dd<10) { -->
+            <!-- dd = '0'+dd -->
+          <!-- }  -->
 
-          if(mm<10) {
-            mm = '0'+mm
-          } 
+          <!-- if(mm<10) { -->
+            <!-- mm = '0'+mm -->
+          <!-- }  -->
           
-          var da = "";
+          <!-- var da = ""; -->
 
-          switch(day){
-            case(1):{
-              da = "Sunday";
-              break;
-            }
-            case(2):{
-              da = "Monday";
-              break;
-            }
-            case(3):{
-              da = "Tuesday";
-              break;
-            }
-            case(4):{
-              da = "Wednesday";
-              break;
-            }
-            case(5):{
-              da = "Thursday";
-              break;
-            }
-            case(6):{
-              da = "Friday";
-              break;
-            }
-            case(7):{
-              da = "Saturday";
-              break;
-            }
-          }
+          <!-- switch(day){ -->
+            <!-- case(1):{ -->
+              <!-- da = "Sunday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(2):{ -->
+              <!-- da = "Monday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(3):{ -->
+              <!-- da = "Tuesday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(4):{ -->
+              <!-- da = "Wednesday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(5):{ -->
+              <!-- da = "Thursday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(6):{ -->
+              <!-- da = "Friday"; -->
+              <!-- break; -->
+            <!-- } -->
+            <!-- case(7):{ -->
+              <!-- da = "Saturday"; -->
+              <!-- break; -->
+            <!-- } -->
+          <!-- } -->
 
-          today = '<b>'+dd + ' / ' + mm + ' / ' + yyyy+'</b><br><b>'+ da +'</b>';
-          document.write(today);
+          <!-- today = '<b>'+dd + ' / ' + mm + ' / ' + yyyy+'</b><br><b>'+ da +'</b>'; -->
+          <!-- document.write(today); -->
           </script>
         </a>
       </div>
       <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="active">
+        <ul class="nav" >
+          <li class="active" >
             <a href="index.hta">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="active">
-           <a href="usergu.hta" target="_top">
-              <i class="now-ui-icons files_paper"></i>
-              <p>User Manual</p>
-            </a>
-          </li>
-          <li class="active">
-            <a href="email.hta">
-              <i class="now-ui-icons ui-1_email-85"></i>
-              <p>Share Report</p>
+              <p align="left">Dashboard </p>
             </a>
           </li>
           
+          <li class="active">
+            <a href="email.hta">
+              <i class="now-ui-icons ui-1_email-85"></i>
+              <p align="left">Share Report</p>
+            </a>
+          </li>
+          
+		  
+		  <li class="active">
+            <a href="product.hta">
+              <i class="now-ui-icons business_briefcase-24"></i>
+              <p align="left">Product</p>
+            </a>
+          </li>
+		  
+		  <li class="active">
+           <a href="usergu.hta" target="_top">
+              <i class="now-ui-icons files_paper"></i>
+              <p align="left">User Manual</p>
+            </a>
+          </li>
+		  
+		  <li class="active">
+            <a href="about.hta">
+              <i class="now-ui-icons business_badge"></i>
+              <p align="left">About As</p>
+            </a>
+          </li>
+		  
         </ul>
       </div>
     </div>
@@ -250,7 +271,7 @@ version="1.0" />
       <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo"><font size="5">Test Dashboard </font></a>
+            <a class="navbar-brand" href="#pablo"><font size="5" ><b>Test Launch Dashboard </b> </font></a>
           </div>
       </nav>
       <!-- End Navbar -->
@@ -263,54 +284,21 @@ version="1.0" />
             <div class="card card-chart">
               <div class="card-header">
                 <!-- <h5 class="card-category">Test Automation</h5> -->
-                <h4 class="card-title">Test Automation</h4>
+                <!-- <h4 class="card-title">Test Automation</h4> -->
 				 
  
-	<!-- <h5 div class="card-category"> -->
-				
-				<!-- <label for="cars">Environment</label> -->
-				
-  <!-- <select id="cars" name="envirn"  > -->
-    <!-- <option value="volvo">Volvo</option> -->
-    <!-- <option value="saab">Saab</option> -->
-    <!-- <option value="fiat">Fiat</option> -->
-    <!-- <option value="audi">Audi</option> -->
-  <!-- </select> -->
-  <!-- <br><br> -->
-  <!-- <label for="cars"> Test data</label> -->
-  <!-- <select id="cars" name="data2"> -->
-    <!-- <option value="volvo">Volvo</option> -->
-    <!-- <option value="saab">Saab</option> -->
-    <!-- <option value="fiat">Fiat</option> -->
-    <!-- <option value="audi">Audi</option> -->
-  <!-- </select> -->
-  <!-- <br><br> -->
-  <!-- <label for="cars">Tool </label> -->
-  <!-- <select id="cars" name="cars"> -->
-    <!-- <option value="volvo">Volvo</option> -->
-    <!-- <option value="saab">Saab</option> -->
-    <!-- <option value="fiat">Fiat</option> -->
-    <!-- <option value="audi">Audi</option> -->
-  <!-- </select> -->
-  <!-- <br><br> -->
-  <!-- <label for="cars">Choose a car:</label> -->
-  <!-- <select id="cars" name="cars"> -->
-    <!-- <option value="volvo">Volvo</option> -->
-    <!-- <option value="saab">Saab</option> -->
-    <!-- <option value="fiat">Fiat</option> -->
-    <!-- <option value="audi">Audi</option> -->
-  <!-- </select> -->
-  <!-- </div> -->
-  
-  <!-- <br><br> -->
   <form>
 	<!-- Type your first name: <input type="text" name="FirstName" size="20"><br> -->
     <!-- Type your last name: <input type="text" name="LastName" size="20"><br> -->
 
 	
 
-  <input style="width: 300px; height:50px; color: white; background-color: #203040; 
-font-family:Book Antiqua;" type="button" Value="Click me to Start " onClick="RunMe()"
+  <!-- <input style="width: 300px; height:50px; color: white; background-color: #203040;  -->
+<!-- font-family:Book Antiqua;" type="button" Value="Click me to Start " onClick="RunMe()"> -->
+<br>
+<input type="image" align="center" src="sp1.gif" alt="Submit" width="500" height="500" onClick="RunMe()">
+<br><br>
+<marquee direction="right" scrollamount="12" width="90%" height="100px"><p style="color:#4B0082">Click On The Image To Speak </p></marquee>
 
 </form>				
 		
@@ -346,7 +334,7 @@ font-family:Book Antiqua;" type="button" Value="Click me to Start " onClick="Run
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.1.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
-  <script >
+  <script language="javascript">
 function RunMe(){
     var shell = new ActiveXObject("WScript.Shell");
     var path = '"E:/run.bat"';

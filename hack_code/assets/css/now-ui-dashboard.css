@@ -2493,6 +2493,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   height: 3px;
   border-radius: 50%;
   margin: 0 auto;
+
 }
 
 .navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
@@ -3897,7 +3898,7 @@ Created using IcoMoon - icomoon.io
 .off-canvas-sidebar .nav li>a {
   margin: 10px 15px 0;
   border-radius: 30px;
-  color: #FFFFFF;
+  color: #35586C;
   display: block;
   text-decoration: none;
   position: relative;
@@ -4086,17 +4087,18 @@ Created using IcoMoon - icomoon.io
 
 .sidebar[data-color="blue"]:after,
 .off-canvas-sidebar[data-color="blue"]:after {
-  background: #2CA8FF;
+  background: #35586C;
 }
 
 .sidebar[data-color="blue"] .nav li.active>a,
 .off-canvas-sidebar[data-color="blue"] .nav li.active>a {
-  color: #2CA8FF;
+  color: #35586C;
+  font-weight: bold
 }
 
 .sidebar[data-color="blue"] .nav li.active>a i,
 .off-canvas-sidebar[data-color="blue"] .nav li.active>a i {
-  color: #2CA8FF;
+  color: #35586C;
 }
 
 .sidebar[data-color="green"]:after,
