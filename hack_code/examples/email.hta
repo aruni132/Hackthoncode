@@ -154,6 +154,37 @@ version="1.0" />
             z-index: 100;
         }
 
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:Transparent;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+  float: center;
+   width: 100%;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
   </style>
  
 </head>
@@ -167,61 +198,14 @@ version="1.0" />
     -->
       <div class="logo">
         <a href="index.hta" class="simple-text logo-normal" align="Center">
-		 <!-- <img src="original.gif" alt="infinitloop"  width="500" height="100" align="Center"> -->
-		  <img src="giphy.gif" alt="infinitloop"  width="200" height="100" align="Center">
+		 <img src="original.gif" alt="infinitloop"  width="500" height="100" align="Center">
+		 <p Style="text-align: center">Infinity Loop</p>
+		  <!-- <img src="giphy.gif" alt="infinitloop"  width="200" height="100" align="Center"> -->
 		 <!-- <img src="g1.jpg" alt="infinitloop"  width="500" height="100" align="Center"> -->
 		  <!-- <img src="g2.png" alt="infinitloop"  width="500" height="100" align="Center"> -->
           <script >
 		 
-          <!-- var today = new Date(); -->
-          <!-- var dd = today.getDate(); -->
-          <!-- var mm = today.getMonth()+1; //January is 0! -->
-          <!-- var day = today.getDay()+1; -->
-          <!-- var yyyy = today.getFullYear(); -->
 
-          <!-- if(dd<10) { -->
-            <!-- dd = '0'+dd -->
-          <!-- }  -->
-
-          <!-- if(mm<10) { -->
-            <!-- mm = '0'+mm -->
-          <!-- }  -->
-          
-          <!-- var da = ""; -->
-
-          <!-- switch(day){ -->
-            <!-- case(1):{ -->
-              <!-- da = "Sunday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(2):{ -->
-              <!-- da = "Monday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(3):{ -->
-              <!-- da = "Tuesday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(4):{ -->
-              <!-- da = "Wednesday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(5):{ -->
-              <!-- da = "Thursday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(6):{ -->
-              <!-- da = "Friday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(7):{ -->
-              <!-- da = "Saturday"; -->
-              <!-- break; -->
-            <!-- } -->
-          <!-- } -->
-
-          <!-- today = '<b>'+dd + ' / ' + mm + ' / ' + yyyy+'</b><br><b>'+ da +'</b>'; -->
-          <!-- document.write(today); -->
           </script>
         </a>
       </div>
@@ -272,7 +256,10 @@ version="1.0" />
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <a class="navbar-brand" href="#pablo"><font size="5" ><b>Test Launch Dashboard </b> </font></a>
+			<p ><font size="1"><br><i> Powered By  </i></font><font style="white-space: pre;font-weight: bold;"> Infinity Loop</font></p>
+			<!-- <p style="white-space: pre"><font size="3"><b> Infinity Loop<b></font><p> -->
           </div>
+		 
       </nav>
       <!-- End Navbar -->
       <div class="panel-header" style="height: 2cm">
@@ -282,7 +269,7 @@ version="1.0" />
         <div >       
           <div>
             <div class="card card-chart">
-              <div class="card-header">
+              <div >
                 <!-- <h5 class="card-category">Test Automation</h5> -->
                 <!-- <h4 class="card-title">Test Automation</h4> -->
 				 
@@ -293,15 +280,26 @@ version="1.0" />
 
 	
 
-  <!-- <input style="width: 300px; height:50px; color: white; background-color: #203040;  -->
-<!-- font-family:Book Antiqua;" type="button" Value="Click me to Start " onClick="RunMe()"> -->
+ 
 <br>
-<input type="image" align="center" src="mail1.png" alt="Submit" width="500" height="500" onClick="RunMe()">
-<br>
-<marquee direction="right" scrollamount="12" width="90%" height="100px"><p style="color:#4B0082"><p style="color:#4B0082">Click On The Image To Send Report </p></marquee>
+<div>
 
+  <input type="image" src="mail12.gif" alt="Submit" style="float:left" > <br> <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+   <input class="btn" type="button" Value="Send Selenium Test Report " onClick="RunMe()" style="width:200px;" >
+ 
+  <br>
+   <input class="btn" type="button" Value="Send  UFT Test Report  "  style="width:200px;" onClick="RunMe()">
+  <br>
+   <input class="btn" type="button" Value=" Send  Power Shell Test Report"   style="width:200px;" onClick="RunMe()">
 </form>				
-		
 
               <div class="card-body">
                 <div id="temp"></div><!--Adding chart from temperature.js-->

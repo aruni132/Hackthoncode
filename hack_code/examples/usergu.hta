@@ -41,7 +41,35 @@ version="1.0" />
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <style>
- 
+ blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 2s linear infinite condemned_blink_effect;
+}
+
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect { 
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
       .body{
           background-color: #DEB887;
       }
@@ -167,66 +195,19 @@ version="1.0" />
     -->
       <div class="logo">
         <a href="index.hta" class="simple-text logo-normal" align="Center">
-		 <!-- <img src="original.gif" alt="infinitloop"  width="500" height="100" align="Center"> -->
-		  <img src="giphy.gif" alt="infinitloop"  width="200" height="100" align="Center">
+		 <img src="original.gif" alt="infinitloop"  width="500" height="100" align="Center">
+		 <p Style="text-align: center">Infinity Loop</p>
+		  <!-- <img src="giphy.gif" alt="infinitloop"  width="200" height="100" align="Center"> -->
 		 <!-- <img src="g1.jpg" alt="infinitloop"  width="500" height="100" align="Center"> -->
 		  <!-- <img src="g2.png" alt="infinitloop"  width="500" height="100" align="Center"> -->
           <script >
 		 
-          <!-- var today = new Date(); -->
-          <!-- var dd = today.getDate(); -->
-          <!-- var mm = today.getMonth()+1; //January is 0! -->
-          <!-- var day = today.getDay()+1; -->
-          <!-- var yyyy = today.getFullYear(); -->
 
-          <!-- if(dd<10) { -->
-            <!-- dd = '0'+dd -->
-          <!-- }  -->
-
-          <!-- if(mm<10) { -->
-            <!-- mm = '0'+mm -->
-          <!-- }  -->
-          
-          <!-- var da = ""; -->
-
-          <!-- switch(day){ -->
-            <!-- case(1):{ -->
-              <!-- da = "Sunday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(2):{ -->
-              <!-- da = "Monday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(3):{ -->
-              <!-- da = "Tuesday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(4):{ -->
-              <!-- da = "Wednesday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(5):{ -->
-              <!-- da = "Thursday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(6):{ -->
-              <!-- da = "Friday"; -->
-              <!-- break; -->
-            <!-- } -->
-            <!-- case(7):{ -->
-              <!-- da = "Saturday"; -->
-              <!-- break; -->
-            <!-- } -->
-          <!-- } -->
-
-          <!-- today = '<b>'+dd + ' / ' + mm + ' / ' + yyyy+'</b><br><b>'+ da +'</b>'; -->
-          <!-- document.write(today); -->
           </script>
         </a>
       </div>
       <div class="sidebar-wrapper">
-         <ul class="nav" >
+        <ul class="nav" >
           <li class="active" >
             <a href="index.hta">
               <i class="now-ui-icons design_app"></i>
@@ -239,7 +220,7 @@ version="1.0" />
               <i class="now-ui-icons ui-1_email-85"></i>
               <p align="left">Share Report</p>
             </a>
-          </li>
+          </li> 
           
 		  
 		  <li class="active">
@@ -268,87 +249,84 @@ version="1.0" />
     </div>
     <div class="main-panel">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+     <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-             <a class="navbar-brand" href="#pablo"><font size="5" ><b>Test Launch Dashboard </b> </font></a>
+            <a class="navbar-brand" href="#pablo"><font size="5" ><b>Test Launch Dashboard </b> </font></a>
+			<p ><font size="1"><br><i> Powered By  </i></font><font style="white-space: pre;font-weight: bold;"> Infinity Loop</font></p>
+			<!-- <p style="white-space: pre"><font size="3"><b> Infinity Loop<b></font><p> -->
           </div>
+		 
       </nav>
       <!-- End Navbar -->
       <div class="panel-header" style="height: 2cm">
         <!--<canvas id="bigDashboardChart"></canvas>-->
       </div>
       <div class="content">
-        <div >       
-          <div>
+        <div class="row">       
+          <div class="col-lg-6">
             <div class="card card-chart">
               <div class="card-header">
-                <!-- <h5 class="card-category">Test Automation</h5> -->
-                <h4 class="card-title" ><p align="left">Xena<p></h4>
-				<div align="left">
-				 <br>'what is your name 'who are you' 
-				 <br>what time' now'
-				 <br>'search','google','find'
-				 <br>'location'
+                <h5 class="card-category"> </h5>
+               <blink> <h4 class="card-title"><p align="left" ><font color="#DC143C"><b>General Commands</b></font></p></h4></blink>
+				<br>
+              <div align= "left">
+			  <font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >What is your name</div></font>
+			  <br>
+			  &nbsp;&nbsp;&nbsp; <font size="4" color="#FF6347" style="white-space: pre;"> <div class="now-ui-icons ui-2_chat-round" ><i> I am Xena</i></div></font>
+				   <br>
+				   <p></p>
+				    <font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >Search location?</div></font>
+             <br>
+				<font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >What is your name</div></font>
+				<br>
+				  <font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >Search google?</div></font>
+              </div>
+              <div class="card-footer">
+                  <div class="chart-legend">
+                      <i class=""></i></div>
+                <div class="stats">
+                  <i ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <h5 class="card-category"></h5>
+				 <blink> <h4 class="card-title"><p align="left" ><font color="#DC143C"><b>Technical Commands</font><p></h4></blink>
+				   <br> 
+                <div align="left">
+                  <font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >Run UFT Tests</div></font><!--Adding chart from do.js-->
+				  <br><p><p>
+				   <font size="4"><div class="now-ui-icons gestures_tap-01" >Run Selenium Test </div></font>
+				   <br><p><p>
+				    <font size="4" color="#3F2163"><div class="now-ui-icons gestures_tap-01" >Run launch/powershell test</div></font>
+				  
+				  
+                </div>
+				<div >
+				 
 				 </div>
-              <div class="card-body">
-                <div id="temp"></div><!--Adding chart from temperature.js-->
+                <div class="card-footer">
+                    <div class="chart-legend">
+                        <i class=""></i>  </div>
+                  <div class="stats">
+                    <i ></i>
+                  </div>
+                </div>
               </div>
-             
-            </div>
-          </div>
-		  
-		  
-		  
-		  
-		  
-		              <div class="card card-chart">
-              <div class="card-header">
-                <!-- <h5 class="card-category">Test Automation</h5> -->
-                <h4 class="card-title">Test Tool We Have</h4>
-				 <br>Selenium
-				 <br>UFT
-				 <br>
-	
-
-              <div class="card-body">
-                <div id="temp"></div><!--Adding chart from temperature.js-->
-              </div>
-             
-            </div>
-          </div>
-		  
-		  
-		  <!--   ********  -->
-		  
-		      <div class="card card-chart">
-              <div class="card-header">
-                <!-- <h5 class="card-category">Test Automation</h5> -->
-                <h4 class="card-title">Application We Have</h4>
-				 <br>test1
-				 <br>test2
-				 <br>
-	
-
-              <div class="card-body">
-                <div id="temp"></div><!--Adding chart from temperature.js-->
-              </div>
-             
-            </div>
-          </div>
-		  
-		  
-		  <!--   ********  -->
-		  
-          </div>
-          
+          </div>         
       </div>
-          
+         
          
         </div>
       </div>
 
     </div>
+  </div>
   </div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
@@ -365,7 +343,7 @@ version="1.0" />
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.1.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
-  <script language="javascript">
+  <script >
 function RunMe(){
     var shell = new ActiveXObject("WScript.Shell");
     var path = '"E:/run.bat"';
